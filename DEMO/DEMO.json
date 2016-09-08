@@ -1,9 +1,10 @@
 {
-  "math": [
+  "ela": [
     {
-      "subjectLabel": "Mathematics",
+      "subjectLabel": "English Language Arts",
       "minYear": 2008,
-      "maxYear": 2012,
+      "maxYear": 2014,
+      "vertical_scale": TRUE,
       "labels": [
         "Unsatisfactory",
         "Part Proficient",
@@ -11,26 +12,21 @@
         "Advanced"
       ],
       "cuts": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
-      ],
-      "cuts_transformed": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
+        {"grade": 3, "loss": 150, "hoss": 795,  "cut1": 466, "cut2": 526, "cut3": 656},
+        {"grade": 4, "loss": 180, "hoss": 940,  "cut1": 517, "cut2": 572, "cut3": 671},
+        {"grade": 5, "loss": 220, "hoss": 955,  "cut1": 538, "cut2": 588, "cut3": 691},
+        {"grade": 6, "loss": 260, "hoss": 970,  "cut1": 543, "cut2": 600, "cut3": 696},
+        {"grade": 7, "loss": 300, "hoss": 980, "cut1": 567, "cut2": 620, "cut3": 716},
+        {"grade": 8, "loss": 330, "hoss": 990, "cut1": 578, "cut2": 632, "cut3": 724}
+        {"grade": 9, "loss": 350, "hoss": 995, "cut1": 585, "cut2": 642, "cut3": 739}
+        {"grade": 10, "loss": 370, "hoss": 999, "cut1": 607, "cut2": 663, "cut3": 747}
       ]
     },
     {
-      "subjectLabel": "Mathematics",
-      "minYear": 2013,
+      "subjectLabel": "English Language Arts",
+      "minYear": 2015,
       "maxYear": 2100,
+      "vertical_scale": FALSE,
       "labels": [
         "Level 1",
         "Level 2",
@@ -39,28 +35,21 @@
         "Level 5"
       ],
       "cuts": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
-      ],
-      "cuts_transformed": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
+        {"grade": 3, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 790},
+        {"grade": 4, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 796},
+        {"grade": 5, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 790},
+        {"grade": 6, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 788},
+        {"grade": 7, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 786},
+        {"grade": 8, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 801}
       ]
     }
   ],
-  "reading": [
+  "mathematics": [
     {
-      "subjectLabel": "Reading",
+      "subjectLabel": "Mathematics",
       "minYear": 2008,
-      "maxYear": 2012,
+      "maxYear": 2014,
+      "vertical_scale": TRUE,
       "labels": [
         "Unsatisfactory",
         "Part Proficient",
@@ -68,26 +57,21 @@
         "Advanced"
       ],
       "cuts": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
-      ],
-      "cuts_transformed": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
+        {"grade": 3, "loss": 150, "hoss": 700, "cut1": 335, "cut2": 419, "cut3": 510},
+        {"grade": 4, "loss": 180, "hoss": 780, "cut1": 383, "cut2": 455, "cut3": 538},
+        {"grade": 5, "loss": 220, "hoss": 800, "cut1": 422, "cut2": 494, "cut3": 562},
+        {"grade": 6, "loss": 240, "hoss": 830, "cut1": 454, "cut2": 520, "cut3": 589},
+        {"grade": 7, "loss": 280, "hoss": 860, "cut1": 487, "cut2": 559, "cut3": 614},
+        {"grade": 8, "loss": 310, "hoss": 890, "cut1": 521, "cut2": 577, "cut3": 628}
+        {"grade": 9, "loss": 340, "hoss": 920, "cut1": 548, "cut2": 602, "cut3": 652}
+        {"grade": 10, "loss": 370, "hoss": 950, "cut1": 562, "cut2": 627, "cut3": 692}
       ]
     },
     {
-      "subjectLabel": "Reading",
-      "minYear": 2013,
+      "subjectLabel": "Mathematics",
+      "minYear": 2015,
       "maxYear": 2100,
+      "vertical_scale": FALSE,
       "labels": [
         "Level 1",
         "Level 2",
@@ -96,39 +80,32 @@
         "Level 5"
       ],
       "cuts": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
-      ],
-      "cuts_transformed": [
-        {"grade": 3, "loss": 0,   "hoss": 600,  "cut1": 150, "cut2": 300, "cut3": 450},
-        {"grade": 4, "loss": 100, "hoss": 700,  "cut1": 250, "cut2": 400, "cut3": 550},
-        {"grade": 5, "loss": 300, "hoss": 800,  "cut1": 350, "cut2": 500, "cut3": 650},
-        {"grade": 6, "loss": 400, "hoss": 900,  "cut1": 450, "cut2": 600, "cut3": 750},
-        {"grade": 7, "loss": 500, "hoss": 1000, "cut1": 550, "cut2": 700, "cut3": 850},
-        {"grade": 8, "loss": 600, "hoss": 1100, "cut1": 650, "cut2": 800, "cut3": 950}
+        {"grade": 3, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 810},
+        {"grade": 4, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 790},
+        {"grade": 5, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 799},
+        {"grade": 6, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 790},
+        {"grade": 7, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 785},
+        {"grade": 8, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 794},
+        {"grade": 9, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 791},
+        {"grade": 10, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 794},
+        {"grade": 11, "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 792}
       ]
     }
   ],
   "algebra_1": [
     {
       "subjectLabel": "Algebra I",
-      "minYear": 2008,
+      "minYear": 2015,
       "maxYear": 2100,
       "labels": [
-        "Unsatisfactory",
-        "Part Proficient",
-        "Proficient",
-        "Advanced"
+        "Level 1",
+        "Level 2",
+        "Level 3",
+        "Level 4",
+        "Level 5"
       ],
       "cuts": [
-        {"grade": "EOCT", "loss": 0, "hoss": 600, "cut1": 150, "cut2": 300, "cut3": 450}
-      ],
-      "cuts_transformed": [
-        {"grade": "EOCT", "loss": 0, "hoss": 600, "cut1": 250, "cut2": 400, "cut3": 550}
+        {"grade": "EOCT", "loss": 650, "hoss": 850, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 804}
       ]
     }
   ]
