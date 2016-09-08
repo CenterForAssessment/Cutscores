@@ -1,0 +1,18 @@
+{
+  "name": "DEMO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s -f . --no-ui --no-notify"
+  },
+  "keywords": [],
+  "author": "Ben Clinkinbeard <ben.clinkinbeard@gmail.com> (http://benclinkinbeard.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.15.0"
+  },
+  "dependencies": {
+    "d3": "4.2.2"
+  }
+}
