@@ -55,7 +55,7 @@ function renderChart (cut_scores, numLevels) {
     .call(d3.axisRight(yScale));
 
   var xScale = d3.scalePoint()
-    .domain(cut_scores.map(d => d.grade))
+    .domain(cut_scores.map(d => d.label))
     .range([0, width]);
 
   svg
@@ -87,7 +87,7 @@ function renderChart (cut_scores, numLevels) {
     });
 
   var area = d3.area()
-    .x(d => xScale(d.data.grade))
+    .x(d => xScale(d.data.label))
     .y0(d => yScale(d[0]))
     .y1(d => yScale(d[1]))
     .curve(d3.curveCatmullRom.alpha(0.5));
