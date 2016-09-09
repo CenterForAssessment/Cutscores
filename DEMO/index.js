@@ -1,5 +1,4 @@
-// var url = 'https://raw.githubusercontent.com/CenterForAssessment/Cutscores/master/DEMO/DEMO.json';
-var url = 'http://localhost:3000/DEMO.json';
+var url = 'https://raw.githubusercontent.com/CenterForAssessment/Cutscores/master/DEMO/DEMO.json';
 
 const path = require('path');
 const express = require('express');
