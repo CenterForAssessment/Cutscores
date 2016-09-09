@@ -2,6 +2,7 @@ var margin = { top: 10, right: 40, bottom: 60, left: 40 };
 var width = 800 - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 var svg;
+var colors = ['#525252', '#737373', '#969696', '#BDBDBD', '#D9D9D9']
 
 d3.json('DEMO.json', onDataLoaded);
 
@@ -66,7 +67,7 @@ function renderChart (cut_scores, numLevels) {
   for (var i = numLevels - 1; i > 0; i--) {
     keys.unshift('cut' + i);
   }
-  var z = d3.scaleOrdinal(d3.schemeCategory10).domain(keys);
+  var z = d3.scaleOrdinal(colors).domain(keys);
 
   var stack = d3.stack()
     .keys(keys)
@@ -74,42 +75,38 @@ function renderChart (cut_scores, numLevels) {
       for (var i = series.length - 1; i > -1; i--) {
         for (var j = 0; j < series[i].length; j++) {
 
-          // series[i][j][1] -= series[i - 1][j][1];
           if (i === 0) {
             series[i][j][0] = yScale.domain()[0];
           } else {
             series[i][j][0] = series[i - 1][j][1];
           }
+          // top band fills chart area
           if (i === series.length - 1) series[i][j][1] = yScale.domain()[1];
         }
       }
     });
 
   var area = d3.area()
-      .x(d => xScale(d.data.grade))
-      .y0(d => yScale(d[0]))
-      .y1(d => yScale(d[1]))
-      .curve(d3.curveCatmullRom.alpha(0.5));
-
-  svg.selectAll('.layer').remove();
+    .x(d => xScale(d.data.grade))
+    .y0(d => yScale(d[0]))
+    .y1(d => yScale(d[1]))
+    .curve(d3.curveCatmullRom.alpha(0.5));
 
   var bands = svg
     .selectAll('.layer')
-    .style('fill-opacity', 0.9)
     .data(stack(cut_scores));
 
-  var newBands = bands
+  // basic update, no transitions
+  bands.exit().remove();
+  bands
     .enter()
-      .append('g')
-      .attr('class', 'layer')
       .append('path')
+      .attr('class', 'layer')
       .style('fill', (d) => {
-        // console.log(d);
         return z(d.key);
       })
-      .style('fill-opacity', 0.3);
-
-  bands.exit().remove();
-
-  bands.merge(newBands).attr('d', area);
+      .style('fill-opacity', 0.5)
+      .attr('d', area);
+  bands
+    .attr('d', area);
 }
