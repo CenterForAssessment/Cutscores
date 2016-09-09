@@ -1,4 +1,5 @@
-var url = 'https://raw.githubusercontent.com/CenterForAssessment/Cutscores/master/DEMO/DEMO.json';
+// var url = 'https://raw.githubusercontent.com/CenterForAssessment/Cutscores/master/DEMO/DEMO.json';
+var url = 'http://localhost:3000/DEMO.json';
 
 const path = require('path');
 const express = require('express');
@@ -8,57 +9,47 @@ const app = express();
 
 app.set('json spaces', 2);
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
-
 function filterByMinYear (minYear, data) {
-  var d = {};
-
-  Object.keys(data).forEach(subject => {
-    d[subject] = data[subject].filter(subjectData => {
-      return subjectData.maxYear >= minYear || !subjectData.maxYear;
+  return data.filter(subject => {
+    subject.data = subject.data.filter(cutSet => {
+      return cutSet.maxYear >= minYear || !cutSet.maxYear;
     });
+    return subject.data.length;
   });
-
-  return d;
 }
 
 function filterByMaxYear (maxYear, data) {
-  var d = {};
-
-  Object.keys(data).forEach(subject => {
-    d[subject] = data[subject].filter(subjectData => {
-      return subjectData.minYear <= maxYear;
+  return data.filter(subject => {
+    subject.data = subject.data.filter(cutSet => {
+      return cutSet.minYear <= maxYear;
     });
+    return subject.data.length;
   });
-
-  return d;
 }
 
 function filterBySubject (subject, data) {
-  if (!subject) return data;
-
-  var d = {};
-
-  for (var prop in data) {
-    if (prop === subject) d[prop] = data[prop];
-  }
-
-  return d;
+  return data.filter(subjectData => !subject || subjectData.subject === subject);
 }
 
 app.get('/api/:state/:subject?', (req, res) => {
   // can state be omitted or multiple comma separated?
   request.get(url).end((err, result) => {
-    var rawData = JSON.parse(result.text);
-    var minYearData = filterByMinYear(req.query.minYear || 1900, rawData);
-    var maxYearData = filterByMaxYear(req.query.maxYear || 2100, minYearData);
-    var subjectData = filterBySubject(req.params.subject, maxYearData);
-    var data = subjectData;
+    var allData = JSON.parse(result.text);
+    var filteredData = allData.data;
 
-    res.json(data);
+    filteredData = filterBySubject(req.params.subject, filteredData);
+    filteredData = filterByMinYear(req.query.minYear || 1900, filteredData);
+    filteredData = filterByMaxYear(req.query.maxYear || 2100, filteredData);
+
+    res.json({
+      metadata: allData.metadata,
+      data: filteredData
+    });
   })
 });
 
+// serve the UI and its dependencies
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 app.use(function (req, res) {
   res.sendFile(path.join(__dirname, req.url));
 });

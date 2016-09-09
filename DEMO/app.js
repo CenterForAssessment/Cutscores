@@ -13,19 +13,25 @@ function onDataLoaded (err, data) {
     .insert('select', '#chart')
       .on('change', onSubjectSelected);
 
-  Object.keys(data).forEach(subjectArea => {
-    data[subjectArea].forEach((sa, i) => {
+  var subjects = data.data;
+
+  subjects.forEach(subject => {
+    subject.data.forEach((cutSet, i) => {
       select
         .append('option')
-          .attr('value', `${subjectArea}-${i}`)
-          .text(`${sa.subjectLabel} – ${sa.minYear}-${sa.maxYear || 'Present'}`);
+          .attr('value', `${subject.subject}-${i}`)
+          .text(`${subject.subjectLabel} – ${cutSet.minYear}-${cutSet.maxYear || 'Present'}`);
     });
   });
 
   function onSubjectSelected (id) {
     id = id || this.value;
     const [key, index] = id.split('-');
-    renderChart(data[key][index].cuts, data[key][index].labels.length);
+    subjects.forEach(subject => {
+      if (subject.subject === key) {
+        renderChart(subject.data[index].cuts, subject.data[index].labels.length);
+      }
+    });
   }
 
   initChart();
