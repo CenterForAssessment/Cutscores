@@ -1,24 +1,41 @@
 var margin = { top: 10, right: 40, bottom: 60, left: 40 };
 var width = 800 - margin.left - margin.right;
-var height = 600 - margin.top - margin.bottom;
+var height = 400 - margin.top - margin.bottom;
 var svg;
-var colors = ['#525252', '#737373', '#969696', '#BDBDBD', '#D9D9D9']
+var colors = ['#525252', '#737373', '#969696', '#BDBDBD', '#D9D9D9'];
+
+function parseQueryString () {
+  var str = window.location.search.substr(1);
+
+  if (!str) return {};
+
+  return str.split('&').reduce(function (prev, pair) {
+    prev[pair.split('=')[0]] = pair.split('=')[1];
+    return prev;
+  }, {});
+}
+
+var url = `https://raw.githubusercontent.com/CenterForAssessment/Cutscores/master/{state}.json`;
 
 var container = d3.select('#chart');
-var url = 'https://raw.githubusercontent.com/CenterForAssessment/Cutscores/master/DEMO/DEMO.json';
-d3.json(url, onDataLoaded);
+var queryParams = parseQueryString();
+var state = (queryParams.state || container.attr('data-state')).toUpperCase();
+var subject = queryParams.subject || container.attr('data-subject');
+var minYear = queryParams['min-year'] || container.attr('data-min-year');
+d3.json(url.replace('{state}', state), onDataLoaded);
 
 function onDataLoaded (err, data) {
   if (err) throw err;
 
   initChart();
-  var subjectData = data.data.filter(subject => {
-    return subject.subject === container.attr('data-subject');
+  var subjectData = data.data.filter(subjectArea => {
+    return subjectArea.subject === subject;
   });
   var data = subjectData.filter(dataset => {
-    return dataset.minYear >= container.attr('data-min-year');
+    return dataset.minYear >= minYear;
   })[0];
   renderChart(data);
+  pymChild.sendHeight();
 }
 
 function initChart () {
@@ -26,8 +43,7 @@ function initChart () {
     .append('svg')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
-      .attr('viewBox', `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
-      .attr('preserveAspectRatio', 'xMaxYMax')
+      .call(responsivefy)
     .append('g')
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
@@ -102,4 +118,31 @@ function renderChart (data) {
       .attr('d', area);
   bands
     .attr('d', area);
+}
+
+function responsivefy(svg) {
+  // get container + svg aspect ratio
+  var container = d3.select(svg.node().parentNode),
+      width = parseInt(svg.style("width")),
+      height = parseInt(svg.style("height")),
+      aspect = width / height;
+
+  // add viewBox and preserveAspectRatio properties,
+  // and call resize so that svg resizes on inital page load
+  svg.attr("viewBox", "0 0 " + width + " " + height)
+      .attr("preserveAspectRatio", "xMinYMid")
+      .call(resize);
+
+  // to register multiple listeners for same event type,
+  // you need to add namespace, i.e., 'click.foo'
+  // necessary if you call invoke this function for multiple svgs
+  // api docs: https://github.com/mbostock/d3/wiki/Selections#on
+  d3.select(window).on("resize." + container.attr("id"), resize);
+
+  // get width of container and resize svg to fit it
+  function resize() {
+      var targetWidth = parseInt(container.style("width"));
+      svg.attr("width", targetWidth);
+      svg.attr("height", Math.round(targetWidth / aspect));
+  }
 }
