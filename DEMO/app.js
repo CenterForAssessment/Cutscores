@@ -4,42 +4,25 @@ var height = 600 - margin.top - margin.bottom;
 var svg;
 var colors = ['#525252', '#737373', '#969696', '#BDBDBD', '#D9D9D9']
 
-d3.json('DEMO.json', onDataLoaded);
+var container = d3.select('#chart');
+var url = 'https://raw.githubusercontent.com/CenterForAssessment/Cutscores/master/DEMO/DEMO.json';
+d3.json(url, onDataLoaded);
 
 function onDataLoaded (err, data) {
   if (err) throw err;
 
-  var select = d3.select('body')
-    .insert('select', '#chart')
-      .on('change', onSubjectSelected);
-
-  var subjects = data.data;
-
-  subjects.forEach(subject => {
-    subject.data.forEach((cutSet, i) => {
-      select
-        .append('option')
-          .attr('value', `${subject.subject}-${i}`)
-          .text(`${subject.subjectLabel} – ${cutSet.minYear}-${cutSet.maxYear || 'Present'}`);
-    });
-  });
-
-  function onSubjectSelected (id) {
-    id = id || this.value;
-    const [key, index] = id.split('-');
-    subjects.forEach(subject => {
-      if (subject.subject === key) {
-        renderChart(subject.data[index].cuts, subject.data[index].labels.length);
-      }
-    });
-  }
-
   initChart();
-  onSubjectSelected(select.nodes()[0].options[0].value);
+  var subjectData = data.data.filter(subject => {
+    return subject.subject === container.attr('data-subject');
+  });
+  var data = subjectData.filter(dataset => {
+    return dataset.minYear >= container.attr('data-min-year');
+  })[0];
+  renderChart(data);
 }
 
 function initChart () {
-  svg = d3.select('#chart')
+  svg = container
     .append('svg')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
@@ -47,9 +30,13 @@ function initChart () {
       .attr('preserveAspectRatio', 'xMaxYMax')
     .append('g')
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
+  d3.json(url)
 }
 
-function renderChart (cut_scores, numLevels) {
+function renderChart (data) {
+  var cut_scores = data.cuts;
+  var numLevels = data.labels.length;
   var yScale = d3.scaleLinear()
     .domain([d3.min(cut_scores, n => n.loss), d3.max(cut_scores, n => n.hoss)])
     .range([height, 0]);
