@@ -30,7 +30,7 @@
       "subject": "ela",
       "subjectLabel": "English Language Arts",
       "minYear": 2015,
-      "maxYear": null,
+      "maxYear": 2100,
       "verticalScale": false,
       "labels": [
         { "label": "Level 1", "proficient": false },
@@ -78,7 +78,7 @@
       "subject": "mathematics",
       "subjectLabel": "Mathematics",
       "minYear": 2015,
-      "maxYear": null,
+      "maxYear": 2100,
       "verticalScale": false,
       "labels": [
         { "label": "Level 1", "proficient": false },
