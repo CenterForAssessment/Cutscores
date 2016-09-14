@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {}
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string"
+          },
+          "subjectLabel": {
+            "type": "string"
+          },
+          "minYear": {
+            "type": "integer"
+          },
+          "maxYear": {
+            "type": ["integer", "null"]
+          },
+          "verticalScale": {
+            "type": "boolean"
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "proficient": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "label",
+                "proficient"
+              ]
+            }
+          },
+          "cuts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "loss": {
+                  "type": "integer"
+                },
+                "cut1": {
+                  "type": "integer"
+                },
+                "hoss": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "label",
+                "loss",
+                "cut1",
+                "hoss"
+              ]
+            }
+          }
+        },
+        "required": [
+          "subject",
+          "subjectLabel",
+          "minYear",
+          "maxYear",
+          "verticalScale",
+          "labels",
+          "cuts"
+        ]
+      }
+    }
+  },
+  "required": [
+    "metadata",
+    "data"
+  ]
+}

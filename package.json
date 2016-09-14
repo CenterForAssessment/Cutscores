@@ -1,0 +1,24 @@
+{
+  "name": "cutscores",
+  "version": "0.1.0",
+  "description": "The repository contains state specific cutscores and related meta-data in JSON format",
+  "main": "test.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jsonschema": "1.1.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CenterForAssessment/cutscores.git"
+  },
+  "keywords": [],
+  "author": "Ben Clinkinbeard <ben.clinkinbeard@gmail.com> (http://benclinkinbeard.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CenterForAssessment/cutscores/issues"
+  },
+  "homepage": "https://github.com/CenterForAssessment/cutscores#readme"
+}
