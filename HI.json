@@ -10,10 +10,10 @@
       "maxYear": 2010,
       "verticalScale": false,
       "labels": [
-          "Well Below Proficiency",
-          "Approaches Proficiency",
-          "Meets Proficiency",
-          "Exceeds Proficiency"
+        { "label": "Well Below Proficiency", "proficient": false },
+        { "label": "Approaches Proficiency", "proficient": false },
+        { "label": "Meets Proficiency", "proficient": true },
+        { "label": "Exceeds Proficiency", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 100, "cut1": 271, "cut2": 300, "cut3": 352, "hoss": 500},
@@ -34,10 +34,10 @@
       "maxYear": 2014,
       "verticalScale": false,
       "labels": [
-          "Well Below Proficiency",
-          "Approaches Proficiency",
-          "Meets Proficiency",
-          "Exceeds Proficiency"
+        { "label": "Well Below Proficiency", "proficient": false },
+        { "label": "Approaches Proficiency", "proficient": false },
+        { "label": "Meets Proficiency", "proficient": true },
+        { "label": "Exceeds Proficiency", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 100, "cut1": 266, "cut2": 300, "cut3": 324, "hoss": 500},
@@ -58,10 +58,10 @@
       "maxYear": 2100,
       "verticalScale": true,
       "labels": [
-          "Not Met Standard",
-          "Nearly Met Standard",
-          "Met Standard",
-          "Exceeded Standard"
+        { "label": "Not Met Standard", "proficient": false },
+        { "label": "Nearly Met Standard", "proficient": false },
+        { "label": "Met Standard", "proficient": true },
+        { "label": "Exceeded Standard", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 2001, "cut1": 2367, "cut2": 2432, "cut3": 2490, "hoss": 2811},
@@ -82,10 +82,10 @@
       "maxYear": 2010,
       "verticalScale": false,
       "labels": [
-          "Well Below Proficiency",
-          "Approaches Proficiency",
-          "Meets Proficiency",
-          "Exceeds Proficiency"
+        { "label": "Well Below Proficiency", "proficient": false },
+        { "label": "Approaches Proficiency", "proficient": false },
+        { "label": "Meets Proficiency", "proficient": true },
+        { "label": "Exceeds Proficiency", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 100, "cut1": 271, "cut2": 300, "cut3": 352, "hoss": 500},
@@ -106,10 +106,10 @@
       "maxYear": 2014,
       "verticalScale": false,
       "labels": [
-          "Well Below Proficiency",
-          "Approaches Proficiency",
-          "Meets Proficiency",
-          "Exceeds Proficiency"
+        { "label": "Well Below Proficiency", "proficient": false },
+        { "label": "Approaches Proficiency", "proficient": false },
+        { "label": "Meets Proficiency", "proficient": true },
+        { "label": "Exceeds Proficiency", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 100, "cut1": 266, "cut2": 300, "cut3": 324, "hoss": 500},
@@ -130,10 +130,10 @@
       "maxYear": 2100,
       "verticalScale": true,
       "labels": [
-          "Not Met Standard",
-          "Nearly Met Standard",
-          "Met Standard",
-          "Exceeded Standard"
+        { "label": "Not Met Standard", "proficient": false },
+        { "label": "Nearly Met Standard", "proficient": false },
+        { "label": "Met Standard", "proficient": true },
+        { "label": "Exceeded Standard", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 2001, "cut1": 2367, "cut2": 2432, "cut3": 2490, "hoss": 2811},

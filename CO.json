@@ -10,10 +10,10 @@
       "maxYear": 2014,
       "verticalScale": true,
       "labels": [
-        "Unsatisfactory",
-        "Partially Proficient",
-        "Proficient",
-        "Advanced"
+        { "label": "Unsatisfactory", "proficient": false },
+        { "label": "Partially Proficient", "proficient": false },
+        { "label": "Proficient", "proficient": true },
+        { "label": "Advanced", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 150, "cut1": 466, "cut2": 526, "cut3": 656, "hoss": 795},
@@ -33,11 +33,11 @@
       "maxYear": null,
       "verticalScale": false,
       "labels": [
-        "Level 1",
-        "Level 2",
-        "Level 3",
-        "Level 4",
-        "Level 5"
+        { "label": "Level 1", "proficient": false },
+        { "label": "Level 2", "proficient": false },
+        { "label": "Level 3", "proficient": false },
+        { "label": "Level 4", "proficient": true  },
+        { "label": "Level 5", "proficient": true  }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 650, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 810, "hoss": 850},
@@ -58,10 +58,10 @@
       "maxYear": 2014,
       "verticalScale": true,
       "labels": [
-        "Unsatisfactory",
-        "Part Proficient",
-        "Proficient",
-        "Advanced"
+        { "label": "Unsatisfactory", "proficient": false },
+        { "label": "Partially Proficient", "proficient": false },
+        { "label": "Proficient", "proficient": true },
+        { "label": "Advanced", "proficient": true }
       ],
       "cuts": [
         {"label": "Grade 3",  "loss": 150, "cut1": 335, "cut2": 419, "cut3": 510, "hoss": 700},
@@ -81,11 +81,11 @@
       "maxYear": null,
       "verticalScale": false,
       "labels": [
-        "Level 1",
-        "Level 2",
-        "Level 3",
-        "Level 4",
-        "Level 5"
+        { "label": "Level 1", "proficient": false },
+        { "label": "Level 2", "proficient": false },
+        { "label": "Level 3", "proficient": false },
+        { "label": "Level 4", "proficient": true  },
+        { "label": "Level 5", "proficient": true  }
       ],
       "cuts": [
         {"label": "Grade 3",   "loss": 650, "cut1": 700, "cut2": 725, "cut3": 750, "cut4": 790, "hoss": 850},
