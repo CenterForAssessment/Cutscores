@@ -61,6 +61,24 @@
                 "cut1_label": {
                   "type": "string"
                 },
+                "cut2": {
+                  "type": "integer"
+                },
+                "cut2_label": {
+                  "type": "string"
+                },
+                "cut3": {
+                  "type": "integer"
+                },
+                "cut3_label": {
+                  "type": "string"
+                },
+                "cut4": {
+                  "type": "integer"
+                },
+                "cut4_label": {
+                  "type": "string"
+                },
                 "hoss": {
                   "type": "integer"
                 }
