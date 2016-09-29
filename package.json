@@ -5,9 +5,11 @@
   "main": "test.js",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "2.16.0",
     "jsonschema": "1.1.0"
   },
   "scripts": {
+    "start": "browser-sync start -c bs-config.js",
     "test": "node test.js"
   },
   "repository": {
