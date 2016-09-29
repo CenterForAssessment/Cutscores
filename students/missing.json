@@ -5,37 +5,59 @@
   "data": {
     "id": "1234",
     "state": "CO",
-    "scores": [
-      {
-        "test": "Grade 4",
-        "score": 475,
-        "scoreTransformed": null,
-        "subject": "mathematics",
-        "subjectLabel": "Mathematics",
-        "year": 2010,
-        "sgp": null,
-        "sgpLevel": null
-      },
-      {
-        "test": "Grade 6",
-        "score": 518,
-        "scoreTransformed": null,
-        "subject": "mathematics",
-        "subjectLabel": "Mathematics",
-        "year": 2012,
-        "sgp": 68,
-        "sgpLevel": "high"
-      },
-      {
-        "test": "Grade 7",
-        "score": 541,
-        "scoreTransformed": null,
-        "subject": "mathematics",
-        "subjectLabel": "Mathematics",
-        "year": 2013,
-        "sgp": 68,
-        "sgpLevel": "high"
-      }
-    ]
+    "subjects": {
+      "mathematics": [
+        {
+          "test": "Grade 4",
+          "score": 475,
+          "scoreTransformed": null,
+          "year": 2010,
+          "sgp": null,
+          "sgpLevel": null
+        },
+        {
+          "test": "Grade 6",
+          "score": 518,
+          "scoreTransformed": null,
+          "year": 2012,
+          "sgp": 68,
+          "sgpLevel": "high"
+        },
+        {
+          "test": "Grade 7",
+          "score": 541,
+          "scoreTransformed": null,
+          "year": 2013,
+          "sgp": 68,
+          "sgpLevel": "high"
+        }
+      ],
+      "ela": [
+        {
+          "test": "Grade 4",
+          "score": 575,
+          "scoreTransformed": null,
+          "year": 2010,
+          "sgp": null,
+          "sgpLevel": null
+        },
+        {
+          "test": "Grade 6",
+          "score": 618,
+          "scoreTransformed": null,
+          "year": 2012,
+          "sgp": 68,
+          "sgpLevel": "high"
+        },
+        {
+          "test": "Grade 7",
+          "score": 641,
+          "scoreTransformed": null,
+          "year": 2013,
+          "sgp": 68,
+          "sgpLevel": "high"
+        }
+      ]
+    }
   }
 }
