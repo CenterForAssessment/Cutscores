@@ -1,6 +1,6 @@
 {
   "metadata": {
-
+    "split": "CO_2015_Grade7"
   },
   "data": {
     "id": "1234",
@@ -10,7 +10,7 @@
         {
           "test": "Grade 5",
           "score": 484,
-          "scoreTransformed": null,
+          "scoreLabel": "484",
           "year": 2013,
           "sgp": 26,
           "sgpLevel": "low"
@@ -18,15 +18,15 @@
         {
           "test": "Grade 6",
           "score": 518,
-          "scoreTransformed": null,
+          "scoreLabel": "518",
           "year": 2014,
           "sgp": 68,
           "sgpLevel": "high"
         },
         {
           "test": "Grade 7",
-          "score": 572,
-          "scoreTransformed": null,
+          "score": 613,
+          "scoreLabel": "575",
           "year": 2015,
           "sgp": 88,
           "sgpLevel": "veryhigh"
@@ -35,24 +35,24 @@
       "ela": [
         {
           "test": "Grade 5",
-          "score": 584,
-          "scoreTransformed": null,
+          "score": 694,
+          "scoreLabel": "694",
           "year": 2013,
           "sgp": 26,
           "sgpLevel": "low"
         },
         {
           "test": "Grade 6",
-          "score": 618,
-          "scoreTransformed": null,
+          "score": 718,
+          "scoreLabel": "718",
           "year": 2014,
           "sgp": 68,
           "sgpLevel": "high"
         },
         {
           "test": "Grade 7",
-          "score": 672,
-          "scoreTransformed": null,
+          "score": 741,
+          "scoreLabel": "727",
           "year": 2015,
           "sgp": 88,
           "sgpLevel": "veryhigh"
