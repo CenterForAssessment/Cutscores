@@ -1,0 +1,63 @@
+{
+  "metadata": {
+
+  },
+  "data": {
+    "id": "1234",
+    "state": "CO",
+    "subjects": {
+      "mathematics": [
+        {
+          "test": "Grade 5",
+          "score": 484,
+          "scoreTransformed": null,
+          "year": 2013,
+          "sgp": 26,
+          "sgpLevel": "low"
+        },
+        {
+          "test": "Grade 6",
+          "score": 518,
+          "scoreTransformed": null,
+          "year": 2014,
+          "sgp": 68,
+          "sgpLevel": "high"
+        },
+        {
+          "test": "Grade 7",
+          "score": 572,
+          "scoreTransformed": null,
+          "year": 2015,
+          "sgp": 88,
+          "sgpLevel": "veryhigh"
+        }
+      ],
+      "ela": [
+        {
+          "test": "Grade 5",
+          "score": 584,
+          "scoreTransformed": null,
+          "year": 2013,
+          "sgp": 26,
+          "sgpLevel": "low"
+        },
+        {
+          "test": "Grade 6",
+          "score": 618,
+          "scoreTransformed": null,
+          "year": 2014,
+          "sgp": 68,
+          "sgpLevel": "high"
+        },
+        {
+          "test": "Grade 7",
+          "score": 672,
+          "scoreTransformed": null,
+          "year": 2015,
+          "sgp": 88,
+          "sgpLevel": "veryhigh"
+        }
+      ]
+    }
+  }
+}
