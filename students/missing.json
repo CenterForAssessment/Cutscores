@@ -35,7 +35,7 @@
       "ela": [
         {
           "test": "Grade 4",
-          "score": 575,
+          "score": 200,
           "scoreTransformed": null,
           "year": 2010,
           "sgp": null,
@@ -43,7 +43,7 @@
         },
         {
           "test": "Grade 6",
-          "score": 618,
+          "score": 300,
           "scoreTransformed": null,
           "year": 2012,
           "sgp": 68,
@@ -51,7 +51,7 @@
         },
         {
           "test": "Grade 7",
-          "score": 641,
+          "score": 400,
           "scoreTransformed": null,
           "year": 2013,
           "sgp": 68,
