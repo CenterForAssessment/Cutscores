@@ -359,7 +359,7 @@
           "year": 2015,
           "sgp": 88,
           "sgpLevel": "veryhigh",
-          "projections": [
+          "trajectories": [
             [610,620,630,640],
             [611,621,631,641],
             [612,622,632,642],
