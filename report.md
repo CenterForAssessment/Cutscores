@@ -8,7 +8,7 @@
 
 ### Horizontal stacking
 <div class="full-width">
-    <div data-pym-src="https://literasee.github.io/cutscores-viz/i.html"></div>
-    <div data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=skipped"></div>
-    <div data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=split"></div>
+    <div style="display: inline-block" data-pym-src="https://literasee.github.io/cutscores-viz/i.html"></div>
+    <div style="display: inline-block" data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=skipped"></div>
+    <div style="display: inline-block" data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=split"></div>
 </div>
