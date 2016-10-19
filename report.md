@@ -7,8 +7,8 @@
 <div class="full-width" data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=standard"></div>
 
 ### Horizontal stacking
-<div class="full-width" style="display: flex">
-    <div style="flex-grow: 1" data-pym-src="https://literasee.github.io/cutscores-viz/i.html"></div>
-    <div style="flex-grow: 1" data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=skipped"></div>
-    <div style="flex-grow: 1" data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=split"></div>
+<div class="full-width horizontal">
+    <div data-pym-src="https://literasee.github.io/cutscores-viz/i.html"></div>
+    <div data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=skipped"></div>
+    <div data-pym-src="https://literasee.github.io/cutscores-viz/i.html?student=split"></div>
 </div>
