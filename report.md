@@ -4,7 +4,7 @@
 <div data-pym-src="//viz.literasee.io/i.html?student=standard"></div>
 
 ### 5th grade repeat
-<div class="full-width" data-pym-src="//viz.literasee.io/i.html?student=standard"></div>
+<div class="full-width" data-pym-src="//viz.literasee.io/i.html?student=repeat"></div>
 
 ### Horizontal stacking
 <div class="full-width horizontal">
