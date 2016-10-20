@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "browser-sync start -c bs-config.js",
-    "test": "node test.js"
+    "test": "node cutscores/test.js"
   },
   "repository": {
     "type": "git",
