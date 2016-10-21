@@ -86,6 +86,7 @@
         { "test": "Grade 9",  "loss": 0, "cut1": 100, "cut1_label": "700", "cut2": 200, "cut2_label": "725", "cut3": 300, "cut3_label": "750", "cut4": 400, "cut4_label": "791", "hoss": 500 },
         { "test": "Grade 10", "loss": 0, "cut1": 100, "cut1_label": "700", "cut2": 200, "cut2_label": "725", "cut3": 300, "cut3_label": "750", "cut4": 400, "cut4_label": "750", "hoss": 500 },
         { "test": "Grade 11", "loss": 0, "cut1": 100, "cut1_label": "700", "cut2": 200, "cut2_label": "725", "cut3": 300, "cut3_label": "750", "cut4": 400, "cut4_label": "750", "hoss": 500 }
+      ]
     },
     {
       "subject": "mathematics",
@@ -118,14 +119,14 @@
         { "test": "Grade 10", "loss": 370, "cut1": 562, "cut1_label": "562", "cut2": 627, "cut2_label": "627", "cut3": 692, "cut3_label": "692", "hoss": 950 }
       ],
       "cuts_growth": [
-        { "test": "Grade 3",  "loss": 150, "cut1": 249, "cut1_label": "249", "cut2": 362, "cut2_label": "362", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 700 },
-        { "test": "Grade 4",  "loss": 180, "cut1": 346, "cut1_label": "346", "cut2": 425, "cut2_label": "425", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 780 },
-        { "test": "Grade 5",  "loss": 220, "cut1": 416, "cut1_label": "416", "cut2": 464, "cut2_label": "464", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 800 },
-        { "test": "Grade 6",  "loss": 240, "cut1": 458, "cut1_label": "458", "cut2": 494, "cut2_label": "494", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 830 },
-        { "test": "Grade 7",  "loss": 280, "cut1": 502, "cut1_label": "502", "cut2": 531, "cut2_label": "531", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 860 },
-        { "test": "Grade 8",  "loss": 310, "cut1": 539, "cut1_label": "539", "cut2": 561, "cut2_label": "561", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 890 },
-        { "test": "Grade 9",  "loss": 340, "cut1": 581, "cut1_label": "581", "cut2": 596, "cut2_label": "596", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 920 },
-        { "test": "Grade 10", "loss": 370, "cut1": 627, "cut1_label": "627", "cut2": 627, "cut2_label": "627", "cut3": , "cut3_label": "", "cut4": , "cut4_label": "", "cut5": , "cut5_label": "", "hoss": 950 }
+        { "test": "Grade 3",  "loss": 150, "cut1": 249, "cut1_label": "249", "cut2": 362, "cut2_label": "362", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 700 },
+        { "test": "Grade 4",  "loss": 180, "cut1": 346, "cut1_label": "346", "cut2": 425, "cut2_label": "425", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 780 },
+        { "test": "Grade 5",  "loss": 220, "cut1": 416, "cut1_label": "416", "cut2": 464, "cut2_label": "464", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 800 },
+        { "test": "Grade 6",  "loss": 240, "cut1": 458, "cut1_label": "458", "cut2": 494, "cut2_label": "494", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 830 },
+        { "test": "Grade 7",  "loss": 280, "cut1": 502, "cut1_label": "502", "cut2": 531, "cut2_label": "531", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 860 },
+        { "test": "Grade 8",  "loss": 310, "cut1": 539, "cut1_label": "539", "cut2": 561, "cut2_label": "561", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 890 },
+        { "test": "Grade 9",  "loss": 340, "cut1": 581, "cut1_label": "581", "cut2": 596, "cut2_label": "596", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 920 },
+        { "test": "Grade 10", "loss": 370, "cut1": 627, "cut1_label": "627", "cut2": 627, "cut2_label": "627", "cut3": "", "cut3_label": "", "cut4": "", "cut4_label": "", "cut5": "", "cut5_label": "", "hoss": 950 }
       ]
     },
     {
