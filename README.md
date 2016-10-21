@@ -1,12 +1,16 @@
-# State Assessment Cutscores & Related Meta-Data
+# State Assessment Data
 
-The repository contains state specific cutscores and related meta-data in JSON format/
+The repository contains state specific data in JSON format. Its contents
+are available on [https://data.literasee.io](https://data.literasee.io) by appending
+the path of the file you wish to access. For example, Colorado's SGP Cutscores  
+are found at [http://data.literasee.io/cutscores/sgp/CO.json](http://data.literasee.io/cutscores/sgp/CO.json).
 
-# DEMO
+# Local Development
 
-To run the demo, follow these steps:
+To run a local server that mimics the live site, follow these steps:
 
-1. Navigate to the DEMO directory in your terminal
+1. Clone the repository and navigate to its directory on your machine
 1. If you haven't done so previously, run `npm install`
 1. Run `npm start`
-1. [http://localhost:3000/](http://localhost:3000/) will open in your default browser
+1. Access the repository's files by appending file paths to
+[http://localhost:4000/](http://localhost:4000/)
