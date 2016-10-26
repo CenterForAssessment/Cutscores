@@ -6,11 +6,17 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "2.16.0",
+    "ghooks": "1.3.2",
     "jsonschema": "1.1.0"
   },
   "scripts": {
     "start": "browser-sync start -c bs-config.js",
     "test": "node cutscores/test.js"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm test"
+    }
   },
   "repository": {
     "type": "git",
