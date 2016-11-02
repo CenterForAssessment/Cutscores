@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "The repository contains state specific cutscores and related meta-data in JSON format",
   "main": "test.js",
-  "engines": {
-    "node": ">=6.0.0"
-  },
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "2.16.0",

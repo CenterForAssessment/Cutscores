@@ -1,5 +1,6 @@
-const { readdirSync: dir, readFile: file } = require('fs');
-const { join } = require('path');
+const dir = require('fs').readdirSync;
+const file = require('fs').readFile;
+const join = require('path').join;
 const validate = require('jsonschema').validate;
 const schema = require('./schema.json');
 
@@ -11,7 +12,7 @@ const dataFiles = []
   )
   .filter(filename => filename.substr(-4) === 'json');
 
-let results = [];
+var results = [];
 
 // check each file against the schema
 dataFiles.forEach(filename => {
