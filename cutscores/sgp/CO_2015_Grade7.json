@@ -15,11 +15,25 @@
         { "label": "Proficient",           "proficient": true  },
         { "label": "Advanced",             "proficient": true  }
       ],
+      "levels_growth": [
+        { "label": "At least 90th",     "on_track": false },
+        { "label": "80th to 90th",      "on_track": false },
+        { "label": "70th to 80th",      "on_track": false },
+        { "label": "60th to 70th",      "on_track": false },
+        { "label": "50th to 60th",      "on_track": false },
+        { "label": "At most 50th",      "on_track": true  }
+      ],
       "cuts": [
         { "test": "Grade 3",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "hoss": 850 },
         { "test": "Grade 4",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "hoss": 850 },
         { "test": "Grade 5",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "hoss": 850 },
         { "test": "Grade 6",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "hoss": 850 }
+      ],
+      "cuts_growth": [
+        { "test": "Grade 3",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "cut4": 760, "cut4_label": "790", "cut5": 805, "cut5_label": "825", "hoss": 850 },
+        { "test": "Grade 4",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "cut4": 760, "cut4_label": "790", "cut5": 805, "cut5_label": "825", "hoss": 850 },
+        { "test": "Grade 5",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "cut4": 760, "cut4_label": "790", "cut5": 805, "cut5_label": "825", "hoss": 850 },
+        { "test": "Grade 6",  "loss": 650, "cut1": 690, "cut1_label": "690", "cut2": 720, "cut2_label": "720", "cut3": 740, "cut3_label": "740", "cut4": 760, "cut4_label": "790", "cut5": 805, "cut5_label": "825", "hoss": 850 }
       ]
     },
     {
@@ -35,12 +49,27 @@
         { "label": "Level 4", "proficient": true  },
         { "label": "Level 5", "proficient": true  }
       ],
+      "levels_growth": [
+        { "label": "At least 90th",     "on_track": false },
+        { "label": "80th to 90th",      "on_track": false },
+        { "label": "70th to 80th",      "on_track": false },
+        { "label": "60th to 70th",      "on_track": false },
+        { "label": "50th to 60th",      "on_track": false },
+        { "label": "At most 50th",      "on_track": true  }
+      ],
       "cuts": [
         { "test": "Grade 7",  "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "hoss": 850 },
         { "test": "Grade 8",  "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "hoss": 850 },
         { "test": "Grade 9",  "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "hoss": 850 },
         { "test": "Grade 10", "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "hoss": 850 },
         { "test": "Grade 11", "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "hoss": 850 }
+      ],
+      "cuts_growth": [
+        { "test": "Grade 7",  "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "cut5": 825, "cut5_label": "835", "hoss": 850 },
+        { "test": "Grade 8",  "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "cut5": 825, "cut5_label": "835", "hoss": 850 },
+        { "test": "Grade 9",  "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "cut5": 825, "cut5_label": "835", "hoss": 850 },
+        { "test": "Grade 10", "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "cut5": 825, "cut5_label": "835", "hoss": 850 },
+        { "test": "Grade 11", "loss": 650, "cut1": 700, "cut1_label": "700", "cut2": 725, "cut2_label": "725", "cut3": 750, "cut3_label": "750", "cut4": 775, "cut4_label": "775", "cut5": 825, "cut5_label": "835", "hoss": 850 }
       ]
     },
     {
