@@ -80,6 +80,10 @@
           "year": 2012,
           "sgp": 68,
           "sgpLevel": "high",
+          "targets": [
+            { "percentile": 85, "label": "Catch Up" },
+            { "percentile": 45, "label": "Keep Up" }
+          ],
           "trajectories": [
             [310, 320, 330, 340, 350],
             [311, 321, 331, 341, 351],
@@ -189,6 +193,10 @@
           "year": 2013,
           "sgp": 88,
           "sgpLevel": "veryhigh",
+          "targets": [
+            { "percentile": 75, "label": "Catch Up" },
+            { "percentile": 35, "label": "Keep Up" }
+          ],
           "trajectories": [
             [310,320,330,340],
             [311,321,331,341],
