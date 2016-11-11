@@ -81,7 +81,7 @@
           "sgp": 68,
           "sgpLevel": "high",
           "targets": [
-            { "percentile": 85, "label": "Catch Up", "limit": 5 },
+            { "percentile": 85, "label": "Catch Up", "timeFrame": 5 },
             { "percentile": 45, "label": "Keep Up" }
           ],
           "trajectories": [
@@ -194,8 +194,8 @@
           "sgp": 88,
           "sgpLevel": "veryhigh",
           "targets": [
-            { "percentile": 75, "label": "Catch Up", "limit": 2 },
-            { "percentile": 35, "label": "Keep Up", "limit": 3 }
+            { "percentile": 75, "label": "Catch Up", "timeFrame": 2 },
+            { "percentile": 35, "label": "Keep Up", "timeFrame": 3 }
           ],
           "trajectories": [
             [310,320,330,340],
