@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "browser-sync start -c bs-config.js",
-    "test": "node cutscores/test.js"
+    "test": "node cutscores/test.js && node students/test.js"
   },
   "config": {
     "ghooks": {

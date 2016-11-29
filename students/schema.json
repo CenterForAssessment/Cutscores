@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subjects": {
+          "type": "object",
+          "patternProperties": {
+            ".*": {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": {
+                "required": [
+                  "test",
+                  "score",
+                  "year"
+                ],
+                "properties": {
+                  "test": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "score": {
+                    "type": "number"
+                  },
+                  "scoreTransformed": {
+                    "type": ["number", "null"]
+                  },
+                  "year": {
+                    "type": "number"
+                  },
+                  "sgp": {
+                    "type": ["number", "null"]
+                  },
+                  "sgpLevel": {
+                    "type": ["string", "null"],
+                    "minLength": 1
+                  },
+                  "targets": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "items": {
+                      "required": [
+                        "percentile",
+                        "label"
+                      ],
+                      "properties": {
+                        "percentile": {
+                          "type": "number"
+                        },
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "timeFrame": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "trajectories": {
+                    "type": "array",
+                    "minItems": 99,
+                    "maxItems": 99,
+                    "items": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": []
+        }
+      },
+      "required": [
+        "id",
+        "state",
+        "subjects"
+      ]
+    }
+  },
+  "required": [
+    "metadata",
+    "data"
+  ]
+}
